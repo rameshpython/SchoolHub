@@ -5,6 +5,7 @@ surname="gaganam"
 firstName="ramesh"
 lastName ="babu"
 molesonbody="rightnose"
+studentmothertongue="telugu"
 
 
 print(studentClass)
@@ -13,6 +14,7 @@ print(surname)
 print(firstName)
 print(lastName)
 print(molesonbody)
+print(studentmothertongue)
 
 
 
