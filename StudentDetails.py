@@ -20,15 +20,15 @@ gurdianLastName="gaganam"
 gurdianSecondName=False
 gurdianAdressProof="34/6"
 studentCastCertificate="sc"
-studentincomecertificate="60000"
-parentmobilenumber="255543652"
-mothermobilenumber="415955595"
-gurdianmobilenumber="44545524"
-fatherpancard="455644668"
-motherpancard="687454867"
-parentsincomeperyear="100000"
-studentpassphoto="2"
-studentaddharnumber="26851687846677"
+studentIncomecertificate="60000"
+parentMobilenumber="255543652"
+motherMobilenumber="415955595"
+gurdianMobilenumber="44545524"
+fatherPancard="455644668"
+motherPancard="687454867"
+parentsIncomeperyear="100000"
+studentPassphoto="2"
+studentAddharnumber="26851687846677"
 
 
 
@@ -54,15 +54,15 @@ print(gurdianLastName)
 print(gurdianSecondName)
 print(gurdianAdressProof)
 print(studentCastCertificate)
-print(studentincomecertificate)
-print(parentmobilenumber)
-print(mothermobilenumber)
-print(gurdianmobilenumber)
-print(fatherpancard)
-print(motherpancard)
-print(parentsincomeperyear)
-print(studentpassphoto)
-print(studentaddharnumber)
+print(studentIncomecertificate)
+print(parentMobilenumber)
+print(motherMobilenumber)
+print(gurdianMobilenumber)
+print(fatherPancard)
+print(motherPancard)
+print(parentsIncomeperyear)
+print(studentPassphoto)
+print(studentAddharnumber)
     
       
 
