@@ -15,6 +15,20 @@ motherName="venkatamma"
 motherFirstname="Gaganam"
 motherLastName="venkatamma"
 isGurdain=False
+gurdianFirstName="yellama"
+gurdianLastName="gaganam"
+gurdianSecondName=False
+gurdianAdressProof="34/6"
+studentCastCertificate="sc"
+studentincomecertificate="60000"
+parentmobilenumber="255543652"
+mothermobilenumber="415955595"
+gurdianmobilenumber="44545524"
+fatherpancard="455644668"
+motherpancard="687454867"
+parentsincomeperyear="100000"
+studentpassphoto="2"
+studentaddharnumber="26851687846677"
 
 
 
@@ -35,6 +49,22 @@ print(motherName)
 print(motherFirstname)
 print(motherLastName)
 print(isGurdain)
+print(gurdianFirstName)
+print(gurdianLastName)
+print(gurdianSecondName)
+print(gurdianAdressProof)
+print(studentCastCertificate)
+print(studentincomecertificate)
+print(parentmobilenumber)
+print(mothermobilenumber)
+print(gurdianmobilenumber)
+print(fatherpancard)
+print(motherpancard)
+print(parentsincomeperyear)
+print(studentpassphoto)
+print(studentaddharnumber)
+    
+      
 
 
 
