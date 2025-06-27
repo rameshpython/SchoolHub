@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Number System Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .output {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        table {
+            width: 50%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        th, td {
+            border: 2px solid black;
+            padding: 12px;
+            text-align: left;
+            color: black;
+        }
+        .symbol {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h2>Enter a Number</h2>
+    <form onsubmit="convertNumber(event)">
+        <label for="numInput">Number (Decimal)</label>
+        <input type="number" id="numInput" name="numInput" required>
+        <button type="submit">Convert</button>
+    </form>
+
+    <div class="output" id="outputArea"></div>
+
+    <script>
+        function convertNumber(event) {
+            event.preventDefault();
+            const num = Number(document.getElementById('numInput').value);
+            const asciiChar = (num >= 0 && num <= 65494) ? String.fromCharCode(num) : 'N/A';
+
+            const expPower = Math.floor(Math.log10(num));
+            const expBase = (num / Math.pow(10, expPower)).toFixed(3);
+            const expExpression = `${expBase} x 10<sup>${expPower}</sup>`;
+            const expSymbol = `${expBase}<span class="symbol">e</span>${expPower}`;
+
+            const formatRow = (label, value, symbol) => `
+                <tr>
+                    <td>${label}</td>
+                    <td>${value}</td>
+                    <td><span class="symbol">${symbol}</span>${value}</td>
+                </tr>
+            `;
+
+            const output = `
+                <table>
+                    <tr>
+                        <td style="background-color: #E0D5EB">
+                            <span style="color: green; font-weight: bold; font-size: 24px">${asciiChar}</span>
+                        </td>
+                        <th style="background-color:#E8E8E8">Conversion</th>
+                        <th style="background-color:#E8E8E8;">Symbol for Human Understanding</th>
+                    </tr>
+                    ${formatRow('Decimal', num, '')}
+                    ${formatRow('Binary', num.toString(2), '0b')}
+                    ${formatRow('Octal', num.toString(8), '0o')}
+                    ${formatRow('Hexa Decimal', num.toString(16).toUpperCase(), '0x')}
+                    <tr>
+                        <td>Exponential</td>
+                        <td>${expExpression}</td>
+                        <td>${expSymbol}</td>
+                    </tr>
+                </table>
+            `;
+            document.getElementById('outputArea').innerHTML = output;
+        }
+    </script>
+</body>
+</html>
