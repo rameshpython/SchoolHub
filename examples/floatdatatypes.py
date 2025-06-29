@@ -44,6 +44,17 @@ print(a)
 a=2.1e-4
 print(a)
 
+#Apply  binary ,octal,hexa to float
+#a=0b1010.0b1111
+#print(a)
+
+#a=0o17.0b1010
+#print(a)
+
+#a=0xf.0xa
+#print(a)
+
+  
 
 
 

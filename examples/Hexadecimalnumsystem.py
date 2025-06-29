@@ -30,7 +30,7 @@ c=2356
 hv=hex(c)
 print(hv,type(hv))
 
-#Binary ti hexa decimal
+#Binary to hexa decimal
 a=0b1010
 hv=hex(a)
 print(hv,type(hv))
