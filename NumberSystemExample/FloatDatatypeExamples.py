@@ -16,7 +16,7 @@ print("sum:",result)#This shows,sum = o/p.
 #3.Writre a program to multiply a float with an intiger.
 a=54.9
 b=8
-total=a+b
+total=a*b
 print("Total Marks:",total)
 
 #4.convert an integer to a float.

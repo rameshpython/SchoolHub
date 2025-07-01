@@ -33,3 +33,5 @@ print(True/True)
 
 print(False/True)
 
+print(0b1010+1.1+True)#o/p=12.1
+
