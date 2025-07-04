@@ -78,7 +78,7 @@ SyntaxError: closing parenthesis '}' does not match opening parenthesis '['
 >>>
 >>> #case 3:
 >>> s="PYTHON"
->>> s[1:-1]
+>>> 
 'YTHO'
 >>> s[2:-4]
 ''
@@ -128,6 +128,162 @@ SyntaxError: invalid syntax
 >>> s[4:2:2]
 ''
 >>>
+s[6:3:2]
+
+#More examples :
+>> #how  to  create string in python
+>>> name="Ramesh"
+>>> print(name)
+Ramesh
+>>>
+>>> #multi string
+>>> message="""Hello,
+... This  is multi_line
+... string examples.
+... we are using in python"""
+>>> print(message)
+Hello,
+This  is multi_line
+string examples.
+we are using in python
+>>>
+>>> #string concatenation
+>>> string concatenation means joing two or more strings together using + operator
+  File "<python-input-9>", line 1
+    string concatenation means joing two or more strings together using + operator
+           ^^^^^^^^^^^^^
+SyntaxError: invalid syntax
+>>> # string concatenation means joing two or more strings together using + operator
+>>> #Example:
+>>> first_name="Ramesh"
+>>> last_name="Babu"
+>>> full_name=first_name+"   "+last_name
+>>> print(full_name)
+Ramesh   Babu
+>>>
+>>> greeting="Hello"
+>>> name="sita"
+>>> message=greeting+" "+name+!
+  File "<python-input-19>", line 1
+    message=greeting+" "+name+!
+                              ^
+SyntaxError: invalid syntax
+>>> message=greeting+" "+name
+>>> print(message)
+Hello sita
+>>>
+>>> #Access a character
+>>> Word="python"
+>>> print(Word[3])
+h
+>>> print(Word[6])
+Traceback (most recent call last):
+  File "<python-input-26>", line 1, in <module>
+    print(Word[6])
+          ~~~~^^^
+IndexError: string index out of range
+>>> print(Word[5])
+n
+>>>
+>>> #slicing
+>>> word="python"
+>>> print(word[1:5])
+ytho
+>>> print(word[2:6])
+thon
+>>> print(word[2:4:6])
+t
+>>> print(word[1:6:3])
+yo
+>>>
+>>> #upper()
+>>> #convert "there is a beautiful rose in garden"
+>>> text= "there is a beautiful rose in garden"
+>>> print(text.upper())
+THERE IS A BEAUTIFUL ROSE IN GARDEN
+>>>
+>>> #lower()
+>>> text="THERE IS A BEAUTIFUL ROSE IN THE GARDEN"
+>>> print(text.lower())
+there is a beautiful rose in the garden
+>>>
+>>> #replace()
+>>> text="Hello world"
+>>> print(text.replace("world","garden"))
+Hello garden
+>>> print(text.replace("Hello","My"))
+My world
+>>> print(text.replace("My world","Your place"))
+Hello world
+>>>
+>>> print(text.replace("Hello world","Nick name"))
+Nick name
+>>> print(text)
+Hello world
+>>>
+>>> #split()
+>>> #how to split a sentence into words
+>>> sentence="All the country people are together to find rocket"
+>>> print(sentence.split())
+['All', 'the', 'country', 'people', 'are', 'together', 'to', 'find', 'rocket']
+>>>
+>>> sentence="python is fun"
+>>> print(sentence.split())
+['python', 'is', 'fun']
+>>>
+>>> #strip()
+>>> #Remove white or empty spaces from start and end in strins.it removves spaces,tabs ans (\t)and newline(\n)from both sides .
+>>> text="    Hello world     "
+>>> print(text.strip())
+Hello world
+>>>
+>>> text=###Welcome###
+  File "<python-input-67>", line 1
+    text=###Welcome###
+         ^^^^^^^^^^^^^
+SyntaxError: invalid syntax
+>>> text="###Welcome###"
+>>> print(text.strip(#))
+... print(text.strip())
+...
+... text="\n\tHello world\n\t"
+... print(text.strip())
+...
+  File "<python-input-69>", line 1
+    print(text.strip(#))
+                    ^
+SyntaxError: '(' was never closed
+>>> print(text.strip( ))
+###Welcome###
+>>> print(text.strip(#))
+...
+... text="\n\tHello\n\t"
+... print(text.strip( ))
+...
+  File "<python-input-71>", line 1
+    print(text.strip(#))
+                    ^
+SyntaxError: '(' was never closed
+>>> print(text.strip())
+###Welcome###
+>>>
+>>> #what will len("python")
+>>> s="python"
+>>> len(s)
+6
+>>> #or
+>>> len("python")
+6
+>>>
+
+
+
+
+
+
+
+
+
 
 
 
