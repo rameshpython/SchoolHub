@@ -74,3 +74,7 @@ print(c,type(c))
 c=a-b
 print(c,type(c))
 
+c=a/b
+print(c,type(c))
+
+

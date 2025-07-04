@@ -30,6 +30,9 @@ print(s1,type(s1))
 s2="Gaganam ramesh"
 print(s2,type(s2))
 
+s3='Gaganam rames'
+print(s3,type(s3))
+
 print("----------------------------------")
 
 #address1="Guido van Rossum #SyntaxError: unterminated string literal (detected at line 1)
