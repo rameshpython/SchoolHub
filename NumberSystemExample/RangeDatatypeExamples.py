@@ -80,5 +80,21 @@ for v in range(1000,1006,2):
 
     for v in range(-5,6,2):
         print(v)
+
+r=range(100,111,2)
+print(r[-1])
+
+
+for val in range (10,0,-1)[::-1]:
+    print(val)
+
+for val in range(100,1001,100)[::2]:
+    print(val)
+
+print(range(1000,1020,3)[-2])
+
+for val in range(400,501,20)[1:4]:
+    print(val)
+    
         
     
