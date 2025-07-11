@@ -90,3 +90,6 @@ print(lst1,type(lst1))
 lst1=list(a)
 print(lst1)#TypeError: 'int' object is not iterable(means no more than one value)
 
+
+    
+
