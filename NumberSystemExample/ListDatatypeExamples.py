@@ -133,6 +133,142 @@ print(list)
 list.index('2')
 print(list)
 
+#8.enumarate()
+#Examples :
+lst=[10,20,30,10,20,30,10,20]
+print(lst)
+for index,value in enumerate(lst):
+    print(index,"--->",value)
+print("---------------")
+
+for index,value in enumerate(lst):
+    if(value==10):
+            print(index,"--->",value)
+print("-------------")
+for index,value in enumerate(lst):
+        if(value==20):
+            print(index,"--->",value)
+print("-------------")
+for index,value in enumerate(lst):
+    if(value==30):
+        print(index,"--->",value)
+
+#9.count()
+#Examples :
+lst=[10,20,30,10,20,30,40,20,10]
+print(lst)
+lst.count(10)
+print(lst)
+lst.count(20)
+lst.count(30)
+lst.count(40)
+#lst.cout(50)#AttributeError: 'list' object has no attribute 'cout'. Did you mean: 'count'?
+print(lst)
+
+#lst("1234567")#TypeError: 'list' object is not callable.it is in string
+#lst.count(1)
+#lst.count('1')
+print("-------------------------")
+#10.copy()
+lst1=[10,"Rossum",23.45]
+print(lst1,id(lst1))
+lst2=lst1.copy()#shallow copy
+print(lst2,id(lst2))
+lst1.append("NL")
+lst2.insert(1,"HYD")
+print(lst1,id(lst1))
+print(lst2,id(lst2))
+print("--------------------")
+lst1=[10,"Rossum",23.56]
+print(lst1,id(lst1))
+ls2=lst1#Deep copy
+print(lst2,id(lst2))
+lst1.append("NL")
+print(lst1,id(lst1))
+print(lst2,id(lst2))
+lst2.insert(0,"kol")
+print(lst1,id(lst1))
+print(lst2,id(lst2))
+
+#11.reverse()
+lst1=[10,20,12,"python",True,2+3j]
+print(lst1,id(lst1))
+lst2=lst1.reverse()
+print(lst2,id(lst2))
+lst1.reverse()
+print(lst1,id(lst1))
+
+lst=[1,3,6,-1,-0,11]
+print(lst)
+lst.reverse()
+print(lst)
+
+#12.sort()
+lst1=[10,4,15,16,6,11,22,-2]
+print(lst1,id(lst1))
+lst1.sort()#sor means Assending order forming
+print(lst1,id(lst1))
+lst1.reverse()
+print(lst1,id(lst1))
+print("------------")
+#lst1=[10,20,12,True,2+3j]#TypeError: '<' not supported between instances of 'complex' and 'int'
+#print(lst1)
+#lst1.sort()
+
+lst1=[10,4,15,16,6,11,22,-2]
+print(lst1)
+lst1.sort(reverse=True)
+print(lst1)
+lst1.sort(reverse=False)
+print(lst1)
+
+#13.extend
+lst1=[10,20,30]
+lst2=["RS","TR","DR"]
+print(lst1)
+print(lst2)
+lst1.extend(lst2)
+print(lst1)
+print(lst2)
+lst2.extend(lst1)
+print(lst2)
+
+lst1=[10,20,30]
+lst2=["RS","TR","DR"]
+lst3=[1,2,3,4,5,6,7,8]
+#lst1=extend(lst2,lst3)#NameError: name 'extend' is not defined
+lst1.extend(lst2)
+lst1.extend(lst3)
+print(lst1)
+print("------------------")
+#meging multiple list elements in single line by using + operator
+lst1=[10,20,30]
+lst2=["RS","TR","DR"]
+lst3=[1,2,3,4,5,6,7,8]
+print(lst1,id(lst1))
+lst1=lst1+lst2+lst3
+print(lst1,id(lst1))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
 
 
 
