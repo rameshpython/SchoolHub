@@ -92,13 +92,24 @@ print(lst)
 del lst[-2]
 print(lst)
 lst[-2].pop()
-
 print(lst)
 del lst[2:4]
 print(lst)
 lst.insert(-1,[10,30,50])
 print(lst)
+print("------------------------------")
+lst=[[10,20,30],[40,50,60],[70,80,90]]
+print(lst,type(lst))
+for val in lst:
+  print(val)
 
+lst=[[[10,20,30],[40,50,60],[70,80,90]],[[1,2,3],[4,5,6],[7,8,9]]]
+print(lst,type(lst))
+for matrix in lst:
+  print(matrix)
+for matrix in lst:
+  for row in matrix:
+    print(row)
 
 
 
