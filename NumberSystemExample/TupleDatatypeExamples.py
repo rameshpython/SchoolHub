@@ -72,6 +72,40 @@ print(t1,type(t1))
 t1=t1[::1]
 print(t1,type(t1))
 
+print("---------------------------------")
+#Nested or inner list
+#Examples :
+print("----------------------------")
+#Examples : Tuple in Tuple  (Possibility 1)
+t1=(10,"Rossum",(17,16,18),(77,78,66),"OUCET")
+print(t1,type(t1))
+t1[0]
+t1[1]
+t1[2]
+t1[3]
+t1[2][1]
+t1[-2][-1]
+#Examples  : Possibility 2:    List in Tuple
+t1=(10,"Rossum",[17,16,18],[77,78,66],"OUCET")
+print(t1,type(t1))
+#x=tuple(t1.sorted([2]),reverse=True)#AttributeError: 'tuple' object has no attribute 'sorted'
+print(t1[2],type(t1[2]))
+t1[2].sort()
+print(t1,type(t1))
+t1[3].sort(reverse=True)
+print(t1,type(t1))
+#Examples : Possibility 3:   tuple  in list
+l1=[10,"Rossum",(17,16,18),(77,78,66),"OUCET"]
+print(l1,type(l1))
+l1[1]
+print(l1[2],type(l1[2]))
+print(l1[3],type(l1[3]))
+
+
+
+
+
+
 
 
 
