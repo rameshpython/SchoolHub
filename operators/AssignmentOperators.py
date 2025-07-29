@@ -188,6 +188,175 @@ print(a, b)
 
 
 
+#11. >>= → Right Shift and Assign
+x = 8      # binary: 1000
+x >>= 2    # shifts two bits → 0010
+print(x)
+
+a = 16      # binary: 10000
+a >>= 2     # shift right by 2 bits
+print(a)
+
+x = 20      # binary: 10100
+x >>= 1
+print(x)
+
+x = 10      # binary: 1010
+x >>= 3
+print(x)
+
+x = 5       # binary: 0101
+x >>= 2
+print(x)
+
+
+#12. <<= → Left Shift and Assign
+x = 3      # binary: 0011
+x <<= 2    
+print(x)
+
+a = 5       # binary: 0101
+a <<= 2     # shift left by 2 bits
+print(a)
+
+x = 3       # binary: 0011
+x <<= 1
+print(x)
+
+x = 4       # binary: 0100
+x <<= 3
+print(x)
+
+a = 1       # binary: 0001
+a <<= 4
+print(a)
+
+
+#Examples with programing :
+#AssignmentOp1.py
+a,b=input("Enter Value of a:"),input("Enter Value of b:")
+print("-"*50)
+print("\tOriginal value of a={}".format(a))
+print("\tOriginal value of b={}".format(b))
+#Swapping logic
+a,b=b,a # Multi Line assigment
+print("-"*50)
+print("\tSwapped value of a={}".format(a))
+print("\tSwapped value of b={}".format(b))
+print("-"*50)
+
+#AssignmentOp2.py
+a,b=input("Enter Value of a:"),input("Enter Value of b:")
+print("-"*50)
+print("\tOriginal value of a={}".format(a))
+print("\tOriginal value of b={}".format(b))
+#Swapping logic
+t=a
+a=b
+b=t
+print("-"*50)
+print("\tSwapped value of a={}".format(a))
+print("\tSwapped value of b={}".format(b))
+print("-"*50)
+
+#AssignmentOp3.py
+a,b=int(input("Enter Value of a:")),int(input("Enter Value of b:"))
+print("-"*50)
+print("\tOriginal value of a={}".format(a))
+print("\tOriginal value of b={}".format(b))
+print("-"*50)
+#Swapping Logic
+a=a+b
+b=a-b
+a=a-b
+print("\tSwapped value of a={}".format(a))
+print("\tSwapped value of b={}".format(b))
+print("-"*50)
+
+#AssignmentOp4.py
+a,b=int(input("Enter Value of a:")),int(input("Enter Value of b:"))
+print("-"*50)
+print("\tOriginal value of a={}".format(a))
+print("\tOriginal value of b={}".format(b))
+print("-"*50)
+#Swapping Logic
+a=a*b
+b=a//b
+a=a//b
+print("\tSwapped value of a={}".format(a))
+print("\tSwapped value of b={}".format(b))
+print("-"*50)
+
+
+#AssignmentOp5.py
+a,b=int(input("Enter Value of a:")),int(input("Enter Value of b:"))
+print("-"*50)
+print("\tOriginal value of a={}".format(a))
+print("\tOriginal value of b={}".format(b))
+print("-"*50)
+#Swapping Logic
+a=a^b # Bitwise XOR ( ^ )
+b=a^b
+a=a^b
+print("\tSwapped value of a={}".format(a))
+print("\tSwapped value of b={}".format(b))
+print("-"*50)
+
+
+
+print("--------------------------------------------------------"0
+>>> #assignmentop1.py
+>>> #multi
+>>> #multiline Assignment
+>>> a,b=input("Enter a value of a:"),input("Enter a value of b:")
+Enter a value of a:12
+Enter a value of b:18
+>>>
+>>> print("-"*50)
+--------------------------------------------------
+>>> print("\toriginal value of a ={}".format(a))
+        original value of a =12
+>>> print("\toriginal value of b ={}".format(b))
+        original value of b =18
+>>> #swapping logic
+>>> a,b=b,a #multi line assignment
+>>> a,b=int(input("Enter Value of a:")),int(input("Enter Value of b:"))
+Enter Value of a:45
+Enter Value of b:84
+>>> print("\tOriginal value of a={}".format(a))
+        Original value of a=45
+>>> print("\tOriginal value of b={}".format(b))
+        Original value of b=84
+>>> a=a^b # Bitwise XOR ( ^ )
+>>> b=a^b
+>>> a=a^b
+>>> print("\tSwapped value of a={}".format(a))
+        Swapped value of a=84
+>>> print("\tSwapped value of b={}".format(b))
+        Swapped value of b=45
+>>>
+>>>
+>>> bin(84)
+'0b1010100'
+>>> bin(45)
+'0b101101'
+>>>
+>>> 45^84
+121
+>>>
+>>> print(int(0b111001))
+57
+>>>
+>>> 84^45
+121
+>>>
+
+
+
+
+      
+
+
 
 
 
