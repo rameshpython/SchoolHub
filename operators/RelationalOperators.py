@@ -134,5 +134,70 @@ print(2==20)
 print(10!=20)
 print(20!=20)
 
+#Relational  operator programming
+#float 
+a=float(input("Enter Value of a:"))
+b=float(input("Enter value of b:"))
+print("\tresults of relatioal expreesions")
+print("-"*50)
+print("\t\t{}<{}={}".format(a,b,a<b))
+print("\t\t{}>{}={}".format(a,b,a>b))
+print("\t\t{}=={}={}".format(a,b,a==b))
+print("\t\t{}!={}={}".format(a,b,a!=b))
+print("\t\t{}<={}={}".format(a,b,a<=b))
+print("\t\t{}>={}={}".format(a,b,a>=b))
+print("-"*50)
+
+#int
+a=int(input("Enter Value of a:"))
+b=int(input("Enter value of b:"))
+print("\tresults of relatioal expreesions")
+print("-"*50)
+print("\t\t{}<{}={}".format(a,b,a<b))
+print("\t\t{}>{}={}".format(a,b,a>b))
+print("\t\t{}=={}={}".format(a,b,a==b))
+print("\t\t{}!={}={}".format(a,b,a!=b))
+print("\t\t{}<={}={}".format(a,b,a<=b))
+print("\t\t{}>={}={}".format(a,b,a>=b))
+print("-"*50)
+
+#Relational operators with string
+#Python compares strings lexicographically (alphabetical order, using Unicode value of characters).
+#lexicographically means assending order in unicode(like ascii type)
+print("apple" == "apple")   # True
+print("apple" != "banana")  # True
+print("apple" < "banana")   # True (a < b)
+print("Zebra" > "ant")      # False ('Z' > 'a' in Unicode)
+print("Apple" < "apple")    # True ('A' < 'a' in Unicode)
+print("Apple" <= "apple")    # True ('A' <= 'a' in Unicode)
+print("Zebra" >= "ant")      # False ('Z' >='a' in Unicode)
+print("-"*50)
+
+#Relational operators with boolean
+#True is treated as 1, and False is treated as 0 in comparisons.
+print(True == True)     # True
+print(True != False)    # True
+print(True > False)     # True  (1 > 0)
+print(False < True)     # True  (0 < 1)
+print(True >= False)    # True
+print(True <=False)     #False
+print(False>True)       #False
+print("-"*50)
+
+#Mixes Examples(string and boolean)
+print("hello" == True)     # False
+print(True == 1)           # True
+print(False == 0)          # True
+print("True" == True)      # False (string ≠ boolean)
+#print(True>"ant")         #TypeError: '>' not supported between instances of 'bool' and 'str'
+#print("Zebra"<=True)       #TypeError: '<=' not supported between instances of 'str' and 'bool'
+
+
+
+
+
+
+
+
 
 
