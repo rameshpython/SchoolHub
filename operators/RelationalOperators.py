@@ -192,6 +192,36 @@ print("True" == True)      # False (string ≠ boolean)
 #print(True>"ant")         #TypeError: '>' not supported between instances of 'bool' and 'str'
 #print("Zebra"<=True)       #TypeError: '<=' not supported between instances of 'str' and 'bool'
 
+#Relational Expressions in Python with Examples :
+#Examples with Integers
+print(10 == 10)     # True
+print(5 != 3)       # True
+print(7 > 4)        # True
+print(2 < 1)        # False
+print(8 >= 8)       # True
+print(6 <= 3)       # False
+
+# Examples with Strings
+print("apple" == "apple")    # True
+print("Apple" != "apple")    # True (case-sensitive)
+print("cat" > "bat")         # True (lexicographical)
+print("a" < "b")             # True
+print("abc" >= "ab")         # True
+
+#Examples with Booleans
+print(True == True)     # True
+print(False != True)    # True
+print(True > False)     # True  (since True = 1, False = 0)
+print(False < True)     # True
+
+#Examples with Mixed Expressions
+a = 5
+b = 10
+print((a + 2) < b)       # True → 7 < 10
+print((a * 2) == b)      # True → 10 == 10
+
+
+
 
 
 
