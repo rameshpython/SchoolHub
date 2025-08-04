@@ -19,7 +19,7 @@ print(int(0b100))
 print(True and True)
 
 print("-------------------------------------------------------------------")
-#Bitwise leftshift operator(<<)
+#1.Bitwise leftshift operator(<<)
 print(4<<3)
 
 bin(4)
@@ -54,7 +54,7 @@ bin(10<<0)
 #ValueError: negative shift count
 print("------------------------------------------------------------------------")
 
-#bitwise rightshift operator(>>)
+#2.bitwise rightshift operator(>>)
 a=10
 b=a>>3
 print(b)
@@ -82,7 +82,7 @@ print(32>>0)
 #print(6>>-7)
 print("-----------------------------------------------------")
 
-#Bitwise AND(&)operator (&)
+#3.Bitwise AND(&)operator (&)
 1 & 0
 
 0 & 1
@@ -126,7 +126,7 @@ print(s3,type(s3))
 #[10,20,30]&[30,40,50]
 set([10,20,30])&set([30,40,50])
 
-#Bitwise OR(|)operator (|)
+#4.Bitwise OR(|)operator (|)
 #Example-1
 1|0
 
@@ -163,6 +163,88 @@ print(s3,type(s3))
 
 #"MISSISSIPPI" | "NISSON"
 set("MISSISSIPPI") | set("NISSON")
+
+#5. Bitwise Complement Operator ( ~ )
+a=10
+print(~a)
+
+a=100
+print(~a)
+
+a=-123
+print(~a)
+
+#Given  ~16 =  -17
+print(bin(16))
+print(~16)
+
+print(bin(17))
+print(bin(~17))
+print(~(~17))
+
+print(~16+~17)
+
+print(~16)
+
+#  ~15 is -16
+print(bin(15))
+print(bin(16))
+
+#Formula ===> ~Given Number =  - ( Given Number + 1)
+print(~15)
+
+
+#6. Bitwise XOR Operator ( ^ )
+#Example-1
+print(1^0)
+
+print(0^1)
+
+print(1^1)
+
+print(0^0)
+
+#Example-2
+a=5
+print(bin(5))
+b=6
+print(bin(6))
+
+c=a^b
+print(c)
+#print(3.3^2.3)-------------TypeError: unsupported operand type(s) for ^: 'float' and 'float'
+True^False
+10^10
+123^123
+
+#Example-3
+s1={10,20,30}
+s2={30,40,50}
+s3=s1^s2
+print(s3,type(s3))
+{1.2,2.3,4.5}^{1.2,2.3,4.5}
+{1.2,2.3,4.5,1.1}^{1.2,2.3,4.5,2.2}
+{"Python","Java","DSA"}^{"Java","C++"}
+
+#Example-4
+a,b=3,4
+print(a,b)
+a=a^b
+b=a^b
+a=a^b
+print(a,b)
+
+#Example-5
+a=100
+b=456
+print(a,b)
+a=a^b
+b=a^b
+a=a^b
+print(a,b)
+
+
+
 
 
 
