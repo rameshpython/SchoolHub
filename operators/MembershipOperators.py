@@ -90,3 +90,47 @@ print(a+(b*c)/d)
 print(3/2*4+3+(10/5)**3-2)
 
 
+#precedencr operators more Examples
+#"Calculation with orderwise" is called → Operator Precedence
+#In maths, the concept of orderwise calculation is called: BODMAS or PEMDAS Rule
+
+#ex 1:
+a=3+2*4
+print(a)
+
+print(3+2*4)
+
+#ex 2:
+(3+2)*4
+print((3+2)*4)
+
+#ex 3:
+2**3*2
+print(2**3*2)
+
+#ex 4:
+-2**2
+print(-2**2)
+
+#ex 5:
+10>3 and 4<2
+print(10>3 and 4<2)
+
+#ex 6:
+5|3&2
+print(5|3&2)
+
+#ex 7:
+not 10>5
+print(10<5)
+
+
+
+
+
+
+
+
+
+
+
