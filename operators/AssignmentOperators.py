@@ -304,57 +304,97 @@ print("-"*50)
 
 
 
-print("--------------------------------------------------------"0
->>> #assignmentop1.py
->>> #multi
->>> #multiline Assignment
->>> a,b=input("Enter a value of a:"),input("Enter a value of b:")
-Enter a value of a:12
-Enter a value of b:18
->>>
->>> print("-"*50)
---------------------------------------------------
->>> print("\toriginal value of a ={}".format(a))
-        original value of a =12
->>> print("\toriginal value of b ={}".format(b))
-        original value of b =18
->>> #swapping logic
->>> a,b=b,a #multi line assignment
->>> a,b=int(input("Enter Value of a:")),int(input("Enter Value of b:"))
-Enter Value of a:45
-Enter Value of b:84
->>> print("\tOriginal value of a={}".format(a))
-        Original value of a=45
->>> print("\tOriginal value of b={}".format(b))
-        Original value of b=84
->>> a=a^b # Bitwise XOR ( ^ )
->>> b=a^b
->>> a=a^b
->>> print("\tSwapped value of a={}".format(a))
-        Swapped value of a=84
->>> print("\tSwapped value of b={}".format(b))
-        Swapped value of b=45
->>>
->>>
->>> bin(84)
-'0b1010100'
->>> bin(45)
-'0b101101'
->>>
->>> 45^84
-121
->>>
->>> print(int(0b111001))
-57
->>>
->>> 84^45
-121
->>>
+print("--------------------------------------------------------")
+#assignmentop1.py
+#multi
+#multiline Assignment
+a,b=input("Enter a value of a:"),input("Enter a value of b:")
+print("-"*50)
+print("_______________________________")
+print("\toriginal value of a ={}".format(a))
+print("\toriginal value of b ={}".format(b))
+#swapping logic
+a,b=b,a #multi line assignment
+a,b=int(input("Enter Value of a:")),int(input("Enter Value of b:"))
+print("\tOriginal value of a={}".format(a))
+print("\tOriginal value of b={}".format(b))
+a=a^b # Bitwise XOR ( ^ )
+b=a^b
+a=a^b
+print("\tSwapped value of a={}".format(a))
+print("\tSwapped value of b={}".format(b))
+bin(84)
+
+bin(45)
+45^84
+print(int(0b111001))
+84^45
 
 
 
+#Short hand operators
+#Examples
+bal=5000
+damt=6000
+bal=bal+damt#normal  Expression
+print(bal)
 
-      
+print("_"*50)
+
+bal=5000
+damt=7000
+bal+=damt #+= is called short and operator
+print(bal)
+
+print("_"*50)
+
+a=10
+b=20
+a=a*b
+print(a)
+
+print("----------------")
+
+a=10
+b=2
+a=a-b
+
+#OR
+
+a=10
+b=2
+a-=b
+print(a)
+
+print("---------------------")
+
+a=3
+b=4
+c=5
+a=a+b*c
+print(a)
+
+#OR
+
+a=3
+b=4
+c=5
+a+=b*c
+print(a)
+
+print("-----------------------------------")
+
+a=23
+b=56
+c=98
+a+=b/c
+print(a)
+
+a=34
+b=67
+c=21
+a-=b**c
+print(a)
 
 
 
