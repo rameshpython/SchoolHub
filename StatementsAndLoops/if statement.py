@@ -1,3 +1,4 @@
+#if statement Conditions :
 #program for accepting Three Numerical values and Find Bigest
 #Conditional statements
 #if statement
@@ -82,16 +83,5 @@ if(t<=0):
     print("\tTime :{} is Invalid".format(t))
 if(r<=0):
     print("\tRate of Interest :{} is Invalid".format(r))    
-    
-
-
-
-
-
-
-
-
-    
-
     
 
