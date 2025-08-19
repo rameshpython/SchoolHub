@@ -153,6 +153,7 @@ for val in lst:
     print("\t{}".format(val))
 
 print("-----------------------------------------------")
+
 #ContinueStmtEx7
 #Program for accepting a Line / word and obtains only Vowels
 #ContinueStmtEx7.py
@@ -161,4 +162,110 @@ for ch in word:
     if ch.lower() not in ['a','e','i','o','u']:
         continue
     print("{}".format(ch),end="")
+
+print("----------------------------------------------------------------------------")
+
+#ReadValuesEx-1
+n=int(input("Enter how many values you have:"))
+if(n<=0):
+    print("\t{} is invalid input".format(n))
+else:
+    list=[]
+    for i in range(1,n+1):
+        value=float(input("Enter{} value:".format(i)))
+        list.append(value)
+    else:
+        print("content of list")
+        print(list)
+
+
+#ReadValuesEx-2
+n=int(input("Enter How Many Names u have:"))
+if(n<=0):
+    print("\t{} is invalid Input".format(n))
+else:
+    list=[]
+    for i in range(1,n+1):
+        value=input("Enter {} Name:".format(i))
+        list.append(value)
+    else:
+        print("list of names")
+        print(list)
+
+
+#ReadValuesEx-3
+print("Enter number of values(press @ to stop):")
+list=list()#empty list
+while(True):
+    value=input()
+    if(value!="@"):
+        list.append(float(value))
+    else:
+        break
+print("list of values")
+print(list)
+
+print("--------------------------------------------------------------")
+
+#UniueValuesEx-2
+print("Enter Number of Values (Press @ to stop):")
+lst=list() # empty list
+while(True):
+    value=input()
+    if(value!="@"):
+        lst.append(float(value))
+    else:
+        break
+print("---------------------------")
+print("List of Values")
+print(lst)
+print("---------------------------")
+s=set(lst) # Convert List of Values into set type.
+print("Unique Values")
+print(s)
+
+
+#UniueValuesEx-2
+#program for Obtaining List of Unique Values from given List of Values
+#by using set()
+print("Enter Number of Values (Press @ to stop):")
+lst=list() # empty list
+while(True):
+    value=input()
+    if(value!="@"):
+        lst.append(float(value))
+    else:
+        break
+print("---------------------------")
+print("List of Values")
+print(lst)
+#lst=[10.0, 20.0, 10.0, 20.0, 30.0, 40.0, 10.0, 20.0, 30.0, 50.0, 60.0]
+print("---------------------------")
+ulist=list() # for placing Unique Values
+for val in lst:
+    if val not in ulist:
+        ulist.append(val)
+else:
+    print("List of Unique Values")
+    print(ulist)
+
+
+print("---------------------------------------------------------------")
+
+#Prtogram for Obtaining List of +Ve values from given List of elements
+#WithoutContinueStmtEx
+lst=[10,-23,20,-45,67,-11,78,-90,-89,29]
+print("List of +Ve Values")
+for val in lst:
+    if(val<=0):pass
+    else:
+        print("\t{}".format(val))
+
+lst=[10,-23,20,-45,67,-11,78,-90,-89,29]
+print("List of -ve values")
+for val in lst:
+    if(val<=0):pass
+    else:
+        print("\t{}".format(val))
+        
 
