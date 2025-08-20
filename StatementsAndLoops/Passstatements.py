@@ -70,3 +70,34 @@ process_list([1, "apple", 2, "banana"])
 # in class (custom datatype)
 class Student:
     pass   # empty class (placeholder)
+
+print("-----------------------------------------------------------------------------------------------")
+#Inner loops
+#InnerLoopEx-1
+for i in range(1,6): # Outer loop
+    print("Outer Loop--Value of i={}".format(i))
+    print("-"*50)
+    for j in range(1,4): # inner loop
+        print("\tInner Loop--Value of j={}".format(j))
+    else:
+        print("\tI am from else part of Inner Loop")
+        print("-" * 50)
+else:
+    print("I am from else part of Outer Loop")
+
+#InnerloopEx-2
+#InnerLoopEx2.py
+i=5
+while(i>=1): # Outer loop
+    print("Outer Loop--Value of i={}".format(i))
+    print("-"*50)
+    j=3
+    while(j>=1): # inner loop
+        print("\tInner Loop--Value of j={}".format(j))
+        j=j-1
+    else:
+        i=i-1
+        print("\tI am from else part of Inner Loop")
+        print("-" * 50)
+else:
+    print("I am from else part of Outer Loop")
