@@ -121,19 +121,20 @@ a=int(input("Enter value of a:"))
 b=int(input("Enter  value of b:"))
 print("{}%{}={}".format(a,b,a%b))
 print("-----------------------------------------")
-#14. What is the result of 20 ** 5 in Python?
-a=20
-b=5
+#14. What is the result of 5**2  in Python?
+a=5
+b=2
 print(a**b)
 
 a=int(input("Enter value of a:"))
 b=int(input("Enter  value of b:"))
 print("{}**{}={}".format(a,b,a**b))
 
-#15Q.What is the result of 20 + 5 in Python?
+#15Q.What is the result of (15+5)*2 in Python?
 a=15
 b=5
-print(a+b)
+c=2
+print(a+b)*c)
 
 a=int(input("Enter first value :"))
 b=int(input("Enter second value:"))
