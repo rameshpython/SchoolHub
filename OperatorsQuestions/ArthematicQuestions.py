@@ -212,7 +212,7 @@ print(x)
 x=5
 print("value of x first:",x)
 print(x)
-x=%=2 #x=x%2
+x%=2
 print("value of x after changing:",x)
 print(x)
 
@@ -220,7 +220,7 @@ print(x)
 x=5
 print("value of x first:",x)
 print(x)
-x=**=2 #x=x**2
+x**=2
 print("value of x after changing:",x)
 print(x)
 
@@ -235,10 +235,116 @@ print(x)
 x=10
 print("value of x first:",x)
 x-=3 #x=x-3
-print("value of x after cahging:",x)
+print("value of x after chaging:",x)
 print(x)
 
-print("---------------------------------------")
+#Q61. If x = 10, what is the value of x after x *= 3?
+x=10
+print("value of x first:",x)
+x*=3
+print("value of x after changing:",x)
+print(x)
+
+#Q62. If x = 10, what is the value of x after x /= 4?
+x=10
+print("value of x:",x)
+x/=4
+print("value of x now")
+print(x)
+
+#Q63. If x = 10, what is the value of x after x //= 4?
+x=10
+print("value of x:",x)
+x//=4
+print("value of x now:",x)
+print(x)
+
+#Q64. If x = 10, what is the value of x after x %= 4?
+x=10
+print("value of x:",x)
+x %= 4
+print("value of x now:",x)
+print(x)
+
+#Q65. If x = 10, what is the value of x after x **= 3?
+x=10
+print("value of x:",x)
+x **= 3
+print("value of x now:",x)
+print(x)
+
+#Q66. If x = 7, what is the value of x after x += 8?
+x=7
+print("value of x:",x)
+x += 8
+print("value of x now:",x)
+print(x)
+
+#Q67. If x = 7, what is the value of x after x -= 4?
+x=7
+print("value of x:",x)
+x -= 4
+print("value of x now:",x)
+print(x)
+
+#Q68. If x = 7, what is the value of x after x *= 2?
+x=7
+print("value of x:",x)
+x *= 2
+print("value of x now:",x)
+print(x)
+
+#Q69. If x = 7, what is the value of x after x //= 2?
+x=7
+print("value of x:",x)
+x//= 2
+print("value of x now:",x)
+print(x)
+
+#Q70. If x = 7, what is the value of x after x %= 3?
+x=7
+print("value of x:",x)
+x %= 2
+print("value of x now:",x)
+print(x)
+
+#Q71. If x = 7, what is the value of x after x **= 2?
+x=7
+print("value of x:",x)
+x **= 2
+print("value of x now:",x)
+print(x)
+print("-----------------------------------")
+
+#Q72. If x = 4, what is the value of x after x += 6?
+x=4
+print("value of x:",x)
+x += 6
+print("value of x now:",x)
+print(x)
+
+#Q73. If x = 4, what is the value of x after x -= 2?
+x=4
+print("value of x:",x)
+x -= 2
+print("value of x now:",x)
+print(x)
+
+#Q74. If x = 4, what is the value of x after x *= 5
+x=4
+print("value of x now:",x)
+x*=5
+print("value of x now:",x)
+print()
+
+#Q75. If x = 4, what is the value of x after x //= 3?
+x=5
+print("value of x now:",x)
+x //=3
+print("value of x now:",x)
+print()
+
+
 #76-100
 
 print(10 == 3 )
