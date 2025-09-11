@@ -246,7 +246,6 @@ s="my name is gaganam ramesh  babu"
 show_split(s)
 
 
-
 def show_split(text):
     return text.split()
 
@@ -256,4 +255,15 @@ result =show_split(s)
 print("Original String:", s)
 print("After split():", result)
 
+print("---------------------------------------------------")
+
+def show_join(words):
+    print("Original list:", words)
+
+    result = " ".join(words)   # join with space
+    print("Joined with space:", result)
+
+# main program
+my_words = ["Python", "is", "fun"]
+show_join(my_words)
 
